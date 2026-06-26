@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight:bold;
+    color:darksalmon;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+nav ul li a:hover{
+    color:darksalmon;
+}
+
+.hero{
+    background:black;
+    color:white;
+    min-height: 20vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 20px;
+}
+
+.hero-text h1{
+    font: size 30px;
+}
+
+.hero-text span{
+    color:darksalmon;
+}
+
+.hero-text p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    text-decoration:none;
+    background:darksalmon;
+    color:black;
+    padding:12px 25px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.hero-img img{
+    width:200px;
+    border-radius:20px;
+}
+
+.about,
+.skills,
+.projects,
+.qualification{
+    padding:60px 10%;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.qualification h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:darksalmon;
+}
+
+.about p{
+    text-align:center;
+    font-size:18px;
+}
+
+.skills{
+    background:black;
+}
+
+.skill-box{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.skill-box div{
+    background:darksalmon;
+    padding: 15px;
+    text-align:center;
+    border-radius:25px;
+    font-weight:bold;
+    font-size: 8px;
+}
+.skill-box div:hover{
+    background:black;
+    color:darksalmon;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.card img:hover{
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+.card button{
+    margin-top:10px;
+    padding:10px 15px;
+    background:darksalmon;
+    border:none;
+    cursor:pointer;
+}
+
+.qualification{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-img img{
+    width:250px;
+    margin-top:20px;
+}
+
+.skill-box{
+    grid-template-columns:1fr 1fr;
+}
+
+.project-container{
+    grid-template-columns:1fr;
+}
+}
