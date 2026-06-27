@@ -1,5 +1,12 @@
-let date = prompt("enter a date");
+let date = Number(prompt("enter a date"));
 let month =prompt("enter month");
+if((month=="feb" &&(date<1 ||date>29))||(month=="apr" &&(date<1 ||date>30))||(month=="jun" &&(date<1 ||date>30))||
+(month=="sep" &&(date<1 ||date>30))||(month=="nov" &&(date<1 ||date>30))||(month=="jan" &&(date<1 ||date>31))||
+(month=="mar" &&(date<1 ||date>31))||(month=="may" &&(date<1 ||date>31))||(month=="jul" &&(date<1 ||date>31))||
+(month=="aug" &&(date<1 ||date>31))||(month=="oct" &&(date<1 ||date>31))||(month=="dec" &&(date<1 ||date>31))){
+    console.log("invalid date in this month");
+}
+else{
 
 if((date>=21 && month=="mar")||(date<=19 && month=="apr")){
     console.log(" Aries");
@@ -39,4 +46,5 @@ else if ((date>=19 && month=="feb")||(date<=21 && month=="mar")){
 }
 else{
     console.log("invalid date and month")
+}
 }
